@@ -11,6 +11,7 @@ import { AntdRegistry } from '@ant-design/nextjs-registry';
 import { ColorModeContextProvider } from '@contexts/color-mode';
 import { dataProvider } from '@providers/data-provider';
 import '@refinedev/antd/dist/reset.css';
+import '@styles/globals.css';
 
 export const metadata: Metadata = {
   title: 'Refine',
