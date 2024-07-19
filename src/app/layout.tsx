@@ -12,6 +12,7 @@ import { ColorModeContextProvider } from '@contexts/color-mode';
 import { dataProvider } from '@providers/data-provider';
 import '@refinedev/antd/dist/reset.css';
 import '@styles/globals.css';
+import { REFINE_RESOURCES } from '@constants/refine-resources';
 
 export const metadata: Metadata = {
   title: 'Refine',
@@ -41,6 +42,7 @@ export default function RootLayout({
                   <Refine
                     routerProvider={routerProvider}
                     dataProvider={dataProvider}
+                    resources={REFINE_RESOURCES}
                     notificationProvider={useNotificationProvider}
                     options={{
                       syncWithLocation: true,

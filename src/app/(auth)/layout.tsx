@@ -8,9 +8,9 @@ interface Props {
 export default function AuthLayout({ children }: Props) {
   return (
     <div className="bg-bg h-lvh flex justify-center">
-      <div className="max-w-[1600px] flex">
+      <div className="w-[1600px] flex">
         <Sidebar />
-        <main className="">{children}</main>
+        <main className="flex-1 p-8">{children}</main>
       </div>
     </div>
   );

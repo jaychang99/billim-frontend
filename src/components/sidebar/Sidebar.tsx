@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const Sidebar = () => {
   return (
-    <div className="w-[292px] bg-bg-sub px-4 py-3">
+    <div className="flex-shrink-0 w-[292px] bg-bg-sub px-4 py-3">
       <div className="p-3 flex items-center gap-x-2">
         <Avatar style={{ backgroundColor: '#f56a00' }}>홍</Avatar>
         <span className="inline-flex">홍길동</span>
