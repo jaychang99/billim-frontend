@@ -1,4 +1,8 @@
-import { DashboardOutlined, ShopOutlined } from '@ant-design/icons';
+import {
+  AppstoreOutlined,
+  DashboardOutlined,
+  ShopOutlined,
+} from '@ant-design/icons';
 import { ReactNode } from 'react';
 
 export const SIDEBAR_MENUS: SidebarMenuItem[] = [
@@ -22,6 +26,23 @@ export const SIDEBAR_MENUS: SidebarMenuItem[] = [
         key: 'things-create',
         label: '물건 생성',
         href: '/things/create',
+      },
+    ],
+  },
+  {
+    key: 'categories',
+    label: '카테고리 관리',
+    icon: <AppstoreOutlined />,
+    children: [
+      {
+        key: 'categories-list',
+        label: '카테고리 목록',
+        href: '/categories',
+      },
+      {
+        key: 'categories-create',
+        label: '카테고리 생성',
+        href: '/categories/create',
       },
     ],
   },
