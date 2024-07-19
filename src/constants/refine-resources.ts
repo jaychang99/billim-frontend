@@ -15,4 +15,9 @@ export const REFINE_RESOURCES: RefineProps['resources'] = [
     create: '/categories/create',
     edit: '/categories/:id',
   },
+  {
+    name: 'users',
+    key: 'users',
+    list: '/users',
+  },
 ];

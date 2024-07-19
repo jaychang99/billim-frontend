@@ -2,6 +2,7 @@ import {
   AppstoreOutlined,
   DashboardOutlined,
   ShopOutlined,
+  UserOutlined,
 } from '@ant-design/icons';
 import { ReactNode } from 'react';
 
@@ -43,6 +44,18 @@ export const SIDEBAR_MENUS: SidebarMenuItem[] = [
         key: 'categories-create',
         label: '카테고리 생성',
         href: '/categories/create',
+      },
+    ],
+  },
+  {
+    key: 'users',
+    label: '사용자 관리',
+    icon: <UserOutlined />,
+    children: [
+      {
+        key: 'users-list',
+        label: '사용자 목록',
+        href: '/users',
       },
     ],
   },
